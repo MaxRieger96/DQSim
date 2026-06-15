@@ -1,0 +1,19 @@
+{
+  "name": "state_sep",
+  "partitionCounts": [16],
+  "queryCategories": ["tpch", "job", "tpcds"],
+  "partitioners": ["rrall"],
+  "clusters": [{ "nNodes": 4, "storageService": true, "nodeTypes": ["c5nxlarge"] }],
+  "planners": [
+    "statesep",
+    "statesepb",
+    "statesepp2p",
+    "statesepp2pb",
+    "statesepnoup",
+    "statesepnoupb",
+    "statesepnoupd",
+    "statesepnoupdb"
+  ],
+  "nParallelTasks": 10000,
+  "scaleFactor": 100
+}

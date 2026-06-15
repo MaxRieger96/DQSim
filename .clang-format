@@ -1,0 +1,5 @@
+BasedOnStyle: Google
+PointerAlignment: Left
+DerivePointerAlignment: false
+AllowShortIfStatementsOnASingleLine: WithoutElse
+ColumnLimit: 120

@@ -1,0 +1,9 @@
+{
+  "name": "scaling_partitions",
+  "partitionCounts": [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096],
+  "queryCategories": ["tpch", "job", "tpcds"],
+  "partitioners": ["rrall"],
+  "clusters": [{ "nNodes": 8, "storageService": true, "nodeTypes": ["c5n18xlarge"] }],
+  "planners": ["arr", "greedy1", "netheft", "ceft"],
+  "nParallelTasks": 10000
+}

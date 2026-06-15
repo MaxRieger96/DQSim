@@ -1,0 +1,5 @@
+/coordinator/data
+/worker-*/data
+/results
+/out.txt
+/figures

@@ -1,0 +1,7 @@
+{
+  "nParallelTasks": 1000000,
+  "allowStreamingInput": true,
+  "minimumBlockSize": 128,
+  "limitStepSize": true,
+  "stepLimit": 1e-4
+}

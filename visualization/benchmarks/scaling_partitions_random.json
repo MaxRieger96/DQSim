@@ -1,0 +1,9 @@
+{
+  "name": "scaling_partitions_random",
+  "partitionCounts": [2, 4, 8, 16, 32],
+  "queryCategories": ["tpch", "job", "tpcds"],
+  "partitioners": ["rrall"],
+  "clusters": [{ "nNodes": 8, "storageService": true, "nodeTypes": ["c5n18xlarge"] }],
+  "planners": ["rand1k"],
+  "nParallelTasks": 10000
+}

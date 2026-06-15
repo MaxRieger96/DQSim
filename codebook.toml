@@ -1,0 +1,9 @@
+words = [
+    "cardinalities",
+    "dqsim",
+    "lineitem",
+    "orderkey",
+    "partitioners",
+    "trino",
+    "zipf",
+]

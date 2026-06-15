@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+set -e
+
+# Get all staged C/C++ files
+STAGED=$(git diff --cached --name-only --diff-filter=ACM | grep -E '^src/.*\.(cpp|cxx|cc|c|hpp|hxx|h)$' || true)
+
+if [ -z "$STAGED" ]; then
+  exit 0
+fi
+
+NEEDS_FORMAT=()
+for FILE in $STAGED; do
+  if ! clang-format --dry-run --Werror "$FILE" 2>/dev/null; then
+    NEEDS_FORMAT+=("$FILE")
+  fi
+done
+
+if [ ${#NEEDS_FORMAT[@]} -gt 0 ]; then
+  echo ""
+  echo "❌ Formatting issues found in:"
+  for FILE in "${NEEDS_FORMAT[@]}"; do
+    echo "   $FILE"
+  done
+  echo ""
+  echo "Run this to fix:"
+  echo ""
+  echo "   clang-format -i ${NEEDS_FORMAT[*]}"
+  echo ""
+  exit 1
+fi

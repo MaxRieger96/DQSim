@@ -1,0 +1,9 @@
+{
+  "name": "scaling_partitions_heft",
+  "partitionCounts": [2, 4, 8, 16, 32, 64, 128, 256, 512],
+  "queryCategories": ["tpch", "job", "tpcds"],
+  "partitioners": ["rrall"],
+  "clusters": [{ "nNodes": 8, "storageService": true, "nodeTypes": ["c5n18xlarge"] }],
+  "planners": ["heft"],
+  "nParallelTasks": 10000
+}

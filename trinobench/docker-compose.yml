@@ -1,0 +1,84 @@
+services:
+  minio-init:
+    image: minio/mc
+    entrypoint: >
+      sh -c "
+      mc alias set local http://minio:9000 minioadmin minioadmin &&
+      mc mb --ignore-existing local/trino
+      "
+    networks:
+      - trino-network
+    depends_on:
+      minio:
+        condition: service_healthy
+
+  minio:
+    image: minio/minio
+    container_name: minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio-data:/data
+    networks:
+      - trino-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  coordinator:
+    image: trinodb/trino:479
+    container_name: trino-coordinator
+    ports:
+      - "8080:8080"
+    entrypoint: ["/bin/bash", "/trino-entrypoint/entrypoint.sh"]
+    environment:
+      TRINO_COORDINATOR: "true"
+      TRINO_MEMORY_GB: "${WORKER_MEMORY_GB}"
+      TRINO_HEAP_PCT: "${TRINO_HEAP_PCT}"
+      TRINO_QUERY_MAX_MEMORY: "${TRINO_QUERY_MAX_MEMORY}"
+    volumes:
+      - ./entrypoint.sh:/trino-entrypoint/entrypoint.sh:ro
+      - ./catalogs:/trino-catalogs:ro
+    networks:
+      - trino-network
+    deploy:
+      resources:
+        limits:
+          cpus: "${WORKER_CPUS}"
+          memory: "${WORKER_MEMORY}"
+
+  worker:
+    image: trinodb/trino:479
+    entrypoint: ["/bin/bash", "/trino-entrypoint/entrypoint.sh"]
+    environment:
+      TRINO_COORDINATOR: "false"
+      TRINO_MEMORY_GB: "${WORKER_MEMORY_GB}"
+      TRINO_HEAP_PCT: "${TRINO_HEAP_PCT}"
+      TRINO_QUERY_MAX_MEMORY: "${TRINO_QUERY_MAX_MEMORY}"
+    volumes:
+      - ./entrypoint.sh:/trino-entrypoint/entrypoint.sh:ro
+      - ./catalogs:/trino-catalogs:ro
+    networks:
+      - trino-network
+    depends_on:
+      - coordinator
+    deploy:
+      replicas: ${NUM_WORKERS}
+      resources:
+        limits:
+          cpus: "${WORKER_CPUS}"
+          memory: "${WORKER_MEMORY}"
+
+volumes:
+  minio-data:
+
+networks:
+  trino-network:
+    driver: bridge

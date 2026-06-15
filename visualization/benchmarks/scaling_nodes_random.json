@@ -1,0 +1,15 @@
+{
+  "name": "scaling_nodes_random",
+  "partitionCounts": [64],
+  "queryCategories": ["tpch", "job", "tpcds"],
+  "partitioners": ["rrall"],
+  "clusters": [
+    { "nNodes": 2, "storageService": true, "nodeTypes": ["c5n18xlarge"] },
+    { "nNodes": 4, "storageService": true, "nodeTypes": ["c5n18xlarge"] },
+    { "nNodes": 8, "storageService": true, "nodeTypes": ["c5n18xlarge"] },
+    { "nNodes": 16, "storageService": true, "nodeTypes": ["c5n18xlarge"] },
+    { "nNodes": 32, "storageService": true, "nodeTypes": ["c5n18xlarge"] }
+  ],
+  "planners": ["rand1k"],
+  "nParallelTasks": 10000
+}

@@ -1,0 +1,10 @@
+{
+  "name": "heterogeneous",
+  "partitionCounts": [16],
+  "queryCategories": ["tpch", "job", "tpcds"],
+  "partitioners": ["rrall"],
+  "clusters": [{ "nNodes": 8, "storageService": true, "nodeTypes": ["c5n18xlarge", "c5nxlarge"] }],
+  "planners": ["arr", "rand1k", "greedy1", "heft", "netheft", "ceft"],
+  "nParallelTasks": 10000,
+  "scaleFactor": 100
+}

@@ -1,0 +1,6168 @@
+{
+  "problem": {
+    "broadcastTasks": [],
+    "cluster": {
+      "nodes": [
+        {
+          "memorySize": 96.0,
+          "nCores": 36,
+          "networkLatency": 0.00025,
+          "networkSpeed": 50.0
+        },
+        {
+          "memorySize": 192.0,
+          "nCores": 72,
+          "networkLatency": 0.00025,
+          "networkSpeed": 100.0
+        },
+        {
+          "memorySize": 1000000.0,
+          "nCores": 0,
+          "networkLatency": 0.1,
+          "networkSpeed": 1000000.0
+        }
+      ],
+      "storageService": true
+    },
+    "initialPartitioning": {
+      "cachingNodes": [
+        {
+          "k": {
+            "dataUnitId": 0,
+            "partitionIndex": 0
+          },
+          "v": []
+        },
+        {
+          "k": {
+            "dataUnitId": 0,
+            "partitionIndex": 1
+          },
+          "v": []
+        },
+        {
+          "k": {
+            "dataUnitId": 0,
+            "partitionIndex": 2
+          },
+          "v": []
+        },
+        {
+          "k": {
+            "dataUnitId": 1,
+            "partitionIndex": 0
+          },
+          "v": []
+        },
+        {
+          "k": {
+            "dataUnitId": 1,
+            "partitionIndex": 1
+          },
+          "v": []
+        },
+        {
+          "k": {
+            "dataUnitId": 0,
+            "partitionIndex": 3
+          },
+          "v": []
+        },
+        {
+          "k": {
+            "dataUnitId": 1,
+            "partitionIndex": 2
+          },
+          "v": []
+        },
+        {
+          "k": {
+            "dataUnitId": 1,
+            "partitionIndex": 3
+          },
+          "v": []
+        }
+      ],
+      "nNodes": 3,
+      "owningNode": [
+        {
+          "k": {
+            "dataUnitId": 0,
+            "partitionIndex": 0
+          },
+          "v": 0
+        },
+        {
+          "k": {
+            "dataUnitId": 0,
+            "partitionIndex": 1
+          },
+          "v": 0
+        },
+        {
+          "k": {
+            "dataUnitId": 0,
+            "partitionIndex": 2
+          },
+          "v": 0
+        },
+        {
+          "k": {
+            "dataUnitId": 1,
+            "partitionIndex": 0
+          },
+          "v": 2
+        },
+        {
+          "k": {
+            "dataUnitId": 1,
+            "partitionIndex": 1
+          },
+          "v": 2
+        },
+        {
+          "k": {
+            "dataUnitId": 0,
+            "partitionIndex": 3
+          },
+          "v": 0
+        },
+        {
+          "k": {
+            "dataUnitId": 1,
+            "partitionIndex": 2
+          },
+          "v": 2
+        },
+        {
+          "k": {
+            "dataUnitId": 1,
+            "partitionIndex": 3
+          },
+          "v": 2
+        }
+      ]
+    },
+    "name": "H1",
+    "plan": {
+      "dataUnits": [
+        {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 0,
+              "name": "x",
+              "size": 671.08864
+            }
+          ],
+          "estimatedCard": 1000000.0,
+          "id": 0,
+          "isIntermediate": false,
+          "name": "R1",
+          "partitionLayout": {
+            "attributes": [
+              {
+                "attributeIndex": 0,
+                "dataUnitId": 0,
+                "name": "x",
+                "size": 671.08864
+              }
+            ],
+            "nPartitions": 4,
+            "type": "hashpartitioned"
+          }
+        },
+        {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 1,
+              "name": "y",
+              "size": 671.08864
+            }
+          ],
+          "estimatedCard": 1000000.0,
+          "id": 1,
+          "isIntermediate": false,
+          "name": "R2",
+          "partitionLayout": {
+            "attributes": [
+              {
+                "attributeIndex": 0,
+                "dataUnitId": 1,
+                "name": "y",
+                "size": 671.08864
+              }
+            ],
+            "nPartitions": 4,
+            "type": "hashpartitioned"
+          }
+        },
+        {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 2,
+              "name": "x",
+              "size": 671.08864
+            }
+          ],
+          "estimatedCard": 1000000.0,
+          "id": 2,
+          "isIntermediate": true,
+          "name": "I1",
+          "partitionLayout": {
+            "attributes": [
+              {
+                "attributeIndex": 0,
+                "dataUnitId": 2,
+                "name": "x",
+                "size": 671.08864
+              }
+            ],
+            "nPartitions": 4,
+            "type": "hashpartitioned"
+          }
+        },
+        {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 3,
+              "name": "x",
+              "size": 671.08864
+            }
+          ],
+          "estimatedCard": 1000000.0,
+          "id": 3,
+          "isIntermediate": true,
+          "name": "I2",
+          "partitionLayout": {
+            "attributes": [
+              {
+                "attributeIndex": 0,
+                "dataUnitId": 3,
+                "name": "x",
+                "size": 671.08864
+              }
+            ],
+            "nPartitions": 4,
+            "type": "hashpartitioned"
+          }
+        },
+        {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 4,
+              "name": "x",
+              "size": 671.08864
+            }
+          ],
+          "estimatedCard": 1000000.0,
+          "id": 4,
+          "isIntermediate": true,
+          "name": "result",
+          "partitionLayout": {
+            "attributes": [],
+            "nPartitions": 1,
+            "type": "singlenode"
+          }
+        }
+      ],
+      "dependencyOrder": [
+        0,
+        1
+      ],
+      "pipelines": [
+        {
+          "description": "build hashtable",
+          "estimatedLoad": 3.3750000000000005e-07,
+          "id": 0,
+          "output": 2,
+          "requiredData": [],
+          "scan": 0
+        },
+        {
+          "description": "probe hashtable",
+          "estimatedLoad": 4.5000000000000003e-07,
+          "id": 1,
+          "output": 3,
+          "requiredData": [
+            2
+          ],
+          "scan": 1
+        }
+      ],
+      "shuffleStages": [
+        {
+          "from": 3,
+          "to": 4
+        }
+      ]
+    },
+    "resultNode": 0,
+    "tasks": [
+      {
+        "k": 1,
+        "v": [
+          {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          },
+          {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          },
+          {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          },
+          {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        ]
+      },
+      {
+        "k": 0,
+        "v": [
+          {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            }
+          },
+          {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            }
+          },
+          {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            }
+          },
+          {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "states": [
+    {
+      "abortMessage": "",
+      "aborted": false,
+      "collectedShuffles": [],
+      "done": false,
+      "freeMemory": [
+        102408126464.0,
+        206158430208.0,
+        1.07374115291136e+15
+      ],
+      "nSteps": 0,
+      "partitions": {
+        "cachingNodes": [
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": []
+          }
+        ],
+        "nNodes": 3,
+        "owningNode": [
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": 0
+          }
+        ]
+      },
+      "pendingShuffles": [
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        }
+      ],
+      "pendingTasks": [
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        }
+      ],
+      "pendingTransfers": [
+        {
+          "from": 0,
+          "partition": {
+            "dataUnitId": 0,
+            "partitionIndex": 1
+          },
+          "to": 1
+        },
+        {
+          "from": 0,
+          "partition": {
+            "dataUnitId": 0,
+            "partitionIndex": 3
+          },
+          "to": 1
+        },
+        {
+          "from": 2,
+          "partition": {
+            "dataUnitId": 1,
+            "partitionIndex": 0
+          },
+          "to": 0
+        },
+        {
+          "from": 2,
+          "partition": {
+            "dataUnitId": 1,
+            "partitionIndex": 1
+          },
+          "to": 1
+        },
+        {
+          "from": 2,
+          "partition": {
+            "dataUnitId": 1,
+            "partitionIndex": 2
+          },
+          "to": 0
+        },
+        {
+          "from": 2,
+          "partition": {
+            "dataUnitId": 1,
+            "partitionIndex": 3
+          },
+          "to": 1
+        }
+      ],
+      "runningShuffles": [],
+      "runningTasks": [],
+      "runningTransfers": [],
+      "runtime": 0.0,
+      "shuffleTargets": [
+        {
+          "nodes": [
+            0
+          ],
+          "partition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "abortMessage": "",
+      "aborted": false,
+      "collectedShuffles": [],
+      "done": false,
+      "freeMemory": [
+        101737037824.0,
+        205487341568.0,
+        1.07374115291136e+15
+      ],
+      "nSteps": 0,
+      "partitions": {
+        "cachingNodes": [
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": []
+          }
+        ],
+        "nNodes": 3,
+        "owningNode": [
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": 0
+          }
+        ]
+      },
+      "pendingShuffles": [
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        }
+      ],
+      "pendingTasks": [
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        }
+      ],
+      "pendingTransfers": [],
+      "runningShuffles": [],
+      "runningTasks": [
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 0,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              },
+              "pipelineId": 0,
+              "requiredPartitions": [],
+              "scannedPartition": {
+                "dataUnitId": 0,
+                "partitionIndex": 0
+              }
+            }
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 0,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              },
+              "pipelineId": 0,
+              "requiredPartitions": [],
+              "scannedPartition": {
+                "dataUnitId": 0,
+                "partitionIndex": 2
+              }
+            }
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runningTransfers": [
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 0,
+            "partition": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 0,
+            "partition": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "to": 0
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "to": 0
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runtime": 0.0,
+      "shuffleTargets": [
+        {
+          "nodes": [
+            0
+          ],
+          "partition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "abortMessage": "",
+      "aborted": false,
+      "collectedShuffles": [],
+      "done": false,
+      "freeMemory": [
+        101737037824.0,
+        205487341568.0,
+        1.07374115291136e+15
+      ],
+      "nSteps": 1,
+      "partitions": {
+        "cachingNodes": [
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": []
+          }
+        ],
+        "nNodes": 3,
+        "owningNode": [
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": 0
+          }
+        ]
+      },
+      "pendingShuffles": [
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        }
+      ],
+      "pendingTasks": [
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "pipelineId": 0,
+            "requiredPartitions": [],
+            "scannedPartition": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        }
+      ],
+      "pendingTransfers": [],
+      "runningShuffles": [],
+      "runningTasks": [
+        {
+          "progress": 0.003333333333333333,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 0,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              },
+              "pipelineId": 0,
+              "requiredPartitions": [],
+              "scannedPartition": {
+                "dataUnitId": 0,
+                "partitionIndex": 0
+              }
+            }
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.003333333333333333,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 0,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              },
+              "pipelineId": 0,
+              "requiredPartitions": [],
+              "scannedPartition": {
+                "dataUnitId": 0,
+                "partitionIndex": 2
+              }
+            }
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runningTransfers": [
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 0,
+            "partition": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 0,
+            "partition": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "to": 0
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "to": 0
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runtime": 0.00025,
+      "shuffleTargets": [
+        {
+          "nodes": [
+            0
+          ],
+          "partition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "abortMessage": "",
+      "aborted": false,
+      "collectedShuffles": [],
+      "done": false,
+      "freeMemory": [
+        101737037824.0,
+        205151797248.0,
+        1.07374115291136e+15
+      ],
+      "nSteps": 2,
+      "partitions": {
+        "cachingNodes": [
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": []
+          }
+        ],
+        "nNodes": 3,
+        "owningNode": [
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": 0
+          }
+        ]
+      },
+      "pendingShuffles": [
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        }
+      ],
+      "pendingTasks": [
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        }
+      ],
+      "pendingTransfers": [],
+      "runningShuffles": [],
+      "runningTasks": [
+        {
+          "progress": 0.6699999999999999,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 0,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              },
+              "pipelineId": 0,
+              "requiredPartitions": [],
+              "scannedPartition": {
+                "dataUnitId": 0,
+                "partitionIndex": 0
+              }
+            }
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.6699999999999999,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 0,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              },
+              "pipelineId": 0,
+              "requiredPartitions": [],
+              "scannedPartition": {
+                "dataUnitId": 0,
+                "partitionIndex": 2
+              }
+            }
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 1,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              },
+              "pipelineId": 0,
+              "requiredPartitions": [],
+              "scannedPartition": {
+                "dataUnitId": 0,
+                "partitionIndex": 1
+              }
+            }
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 1,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              },
+              "pipelineId": 0,
+              "requiredPartitions": [],
+              "scannedPartition": {
+                "dataUnitId": 0,
+                "partitionIndex": 3
+              }
+            }
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runningTransfers": [
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "to": 0
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "to": 0
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runtime": 0.05025,
+      "shuffleTargets": [
+        {
+          "nodes": [
+            0
+          ],
+          "partition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "abortMessage": "",
+      "aborted": false,
+      "collectedShuffles": [],
+      "done": false,
+      "freeMemory": [
+        101737037824.0,
+        205151797248.0,
+        1.07374115291136e+15
+      ],
+      "nSteps": 3,
+      "partitions": {
+        "cachingNodes": [
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": []
+          }
+        ],
+        "nNodes": 3,
+        "owningNode": [
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": 0
+          }
+        ]
+      },
+      "pendingShuffles": [
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        }
+      ],
+      "pendingTasks": [
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        }
+      ],
+      "pendingTransfers": [],
+      "runningShuffles": [],
+      "runningTasks": [
+        {
+          "progress": 0.6600000000000001,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 1,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              },
+              "pipelineId": 0,
+              "requiredPartitions": [],
+              "scannedPartition": {
+                "dataUnitId": 0,
+                "partitionIndex": 1
+              }
+            }
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.6600000000000001,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 1,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              },
+              "pipelineId": 0,
+              "requiredPartitions": [],
+              "scannedPartition": {
+                "dataUnitId": 0,
+                "partitionIndex": 3
+              }
+            }
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runningTransfers": [
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "to": 0
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "to": 0
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runtime": 0.07500000000000001,
+      "shuffleTargets": [
+        {
+          "nodes": [
+            0
+          ],
+          "partition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "abortMessage": "",
+      "aborted": false,
+      "collectedShuffles": [],
+      "done": false,
+      "freeMemory": [
+        101737037824.0,
+        205151797248.0,
+        1.07374115291136e+15
+      ],
+      "nSteps": 4,
+      "partitions": {
+        "cachingNodes": [
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": []
+          }
+        ],
+        "nNodes": 3,
+        "owningNode": [
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": 0
+          }
+        ]
+      },
+      "pendingShuffles": [
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        }
+      ],
+      "pendingTasks": [
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        }
+      ],
+      "pendingTransfers": [],
+      "runningShuffles": [],
+      "runningTasks": [],
+      "runningTransfers": [
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "to": 0
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "to": 0
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runtime": 0.08775000000000001,
+      "shuffleTargets": [
+        {
+          "nodes": [
+            0
+          ],
+          "partition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "abortMessage": "",
+      "aborted": false,
+      "collectedShuffles": [],
+      "done": false,
+      "freeMemory": [
+        101737037824.0,
+        205151797248.0,
+        1.07374115291136e+15
+      ],
+      "nSteps": 5,
+      "partitions": {
+        "cachingNodes": [
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": []
+          }
+        ],
+        "nNodes": 3,
+        "owningNode": [
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": 0
+          }
+        ]
+      },
+      "pendingShuffles": [
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        }
+      ],
+      "pendingTasks": [
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 1
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        },
+        {
+          "node": 1,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 3
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            }
+          }
+        }
+      ],
+      "pendingTransfers": [],
+      "runningShuffles": [],
+      "runningTasks": [],
+      "runningTransfers": [
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "to": 0
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "to": 0
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "to": 1
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runtime": 0.1,
+      "shuffleTargets": [
+        {
+          "nodes": [
+            0
+          ],
+          "partition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "abortMessage": "",
+      "aborted": false,
+      "collectedShuffles": [],
+      "done": false,
+      "freeMemory": [
+        101737037824.0,
+        204816252928.0,
+        1.07374115291136e+15
+      ],
+      "nSteps": 6,
+      "partitions": {
+        "cachingNodes": [
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": []
+          }
+        ],
+        "nNodes": 3,
+        "owningNode": [
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": 0
+          }
+        ]
+      },
+      "pendingShuffles": [
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        }
+      ],
+      "pendingTasks": [
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 0
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            }
+          }
+        },
+        {
+          "node": 0,
+          "task": {
+            "broadcast": false,
+            "outputPartition": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "pipelineId": 1,
+            "requiredPartitions": [
+              {
+                "dataUnitId": 2,
+                "partitionIndex": 2
+              }
+            ],
+            "scannedPartition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            }
+          }
+        }
+      ],
+      "pendingTransfers": [],
+      "runningShuffles": [],
+      "runningTasks": [
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 1,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 3,
+                "partitionIndex": 1
+              },
+              "pipelineId": 1,
+              "requiredPartitions": [
+                {
+                  "dataUnitId": 2,
+                  "partitionIndex": 1
+                }
+              ],
+              "scannedPartition": {
+                "dataUnitId": 1,
+                "partitionIndex": 1
+              }
+            }
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 1,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 3,
+                "partitionIndex": 3
+              },
+              "pipelineId": 1,
+              "requiredPartitions": [
+                {
+                  "dataUnitId": 2,
+                  "partitionIndex": 3
+                }
+              ],
+              "scannedPartition": {
+                "dataUnitId": 1,
+                "partitionIndex": 3
+              }
+            }
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runningTransfers": [
+        {
+          "progress": 0.5,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "to": 0
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.5,
+          "progressLimit": 1.0,
+          "transfer": {
+            "from": 2,
+            "partition": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "to": 0
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runtime": 0.125,
+      "shuffleTargets": [
+        {
+          "nodes": [
+            0
+          ],
+          "partition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "abortMessage": "",
+      "aborted": false,
+      "collectedShuffles": [],
+      "done": false,
+      "freeMemory": [
+        101401493504.0,
+        204816252928.0,
+        1.07374115291136e+15
+      ],
+      "nSteps": 7,
+      "partitions": {
+        "cachingNodes": [
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": [
+              0
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": [
+              0
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": []
+          }
+        ],
+        "nNodes": 3,
+        "owningNode": [
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": 0
+          }
+        ]
+      },
+      "pendingShuffles": [],
+      "pendingTasks": [],
+      "pendingTransfers": [],
+      "runningShuffles": [],
+      "runningTasks": [
+        {
+          "progress": 0.5,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 1,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 3,
+                "partitionIndex": 1
+              },
+              "pipelineId": 1,
+              "requiredPartitions": [
+                {
+                  "dataUnitId": 2,
+                  "partitionIndex": 1
+                }
+              ],
+              "scannedPartition": {
+                "dataUnitId": 1,
+                "partitionIndex": 1
+              }
+            }
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.5,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 1,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 3,
+                "partitionIndex": 3
+              },
+              "pipelineId": 1,
+              "requiredPartitions": [
+                {
+                  "dataUnitId": 2,
+                  "partitionIndex": 3
+                }
+              ],
+              "scannedPartition": {
+                "dataUnitId": 1,
+                "partitionIndex": 3
+              }
+            }
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 0,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 3,
+                "partitionIndex": 0
+              },
+              "pipelineId": 1,
+              "requiredPartitions": [
+                {
+                  "dataUnitId": 2,
+                  "partitionIndex": 0
+                }
+              ],
+              "scannedPartition": {
+                "dataUnitId": 1,
+                "partitionIndex": 0
+              }
+            }
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.0,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 0,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 3,
+                "partitionIndex": 2
+              },
+              "pipelineId": 1,
+              "requiredPartitions": [
+                {
+                  "dataUnitId": 2,
+                  "partitionIndex": 2
+                }
+              ],
+              "scannedPartition": {
+                "dataUnitId": 1,
+                "partitionIndex": 2
+              }
+            }
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runningTransfers": [],
+      "runtime": 0.15,
+      "shuffleTargets": [
+        {
+          "nodes": [
+            0
+          ],
+          "partition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "abortMessage": "",
+      "aborted": false,
+      "collectedShuffles": [
+        {
+          "locatedPartition": {
+            "Node": 0,
+            "Partition": {
+              "dataUnitId": 4,
+              "partitionIndex": 0
+            }
+          },
+          "shuffleOutPartition": {
+            "node": 0,
+            "partition": {
+              "dataUnitId": 4,
+              "partitionIndex": 0
+            },
+            "progress": 0.0
+          }
+        }
+      ],
+      "done": false,
+      "freeMemory": [
+        100730404864.0,
+        204816252928.0,
+        1.07374115291136e+15
+      ],
+      "nSteps": 8,
+      "partitions": {
+        "cachingNodes": [
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": [
+              0
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": [
+              0
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": []
+          }
+        ],
+        "nNodes": 3,
+        "owningNode": [
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": 1
+          }
+        ]
+      },
+      "pendingShuffles": [],
+      "pendingTasks": [],
+      "pendingTransfers": [],
+      "runningShuffles": [
+        {
+          "from": 1,
+          "progress": 0.0,
+          "to": 0
+        }
+      ],
+      "runningTasks": [
+        {
+          "progress": 0.25,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 0,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 3,
+                "partitionIndex": 0
+              },
+              "pipelineId": 1,
+              "requiredPartitions": [
+                {
+                  "dataUnitId": 2,
+                  "partitionIndex": 0
+                }
+              ],
+              "scannedPartition": {
+                "dataUnitId": 1,
+                "partitionIndex": 0
+              }
+            }
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.25,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 0,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 3,
+                "partitionIndex": 2
+              },
+              "pipelineId": 1,
+              "requiredPartitions": [
+                {
+                  "dataUnitId": 2,
+                  "partitionIndex": 2
+                }
+              ],
+              "scannedPartition": {
+                "dataUnitId": 1,
+                "partitionIndex": 2
+              }
+            }
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runningTransfers": [],
+      "runtime": 0.175,
+      "shuffleTargets": [
+        {
+          "nodes": [
+            0
+          ],
+          "partition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "abortMessage": "",
+      "aborted": false,
+      "collectedShuffles": [
+        {
+          "locatedPartition": {
+            "Node": 0,
+            "Partition": {
+              "dataUnitId": 4,
+              "partitionIndex": 0
+            }
+          },
+          "shuffleOutPartition": {
+            "node": 0,
+            "partition": {
+              "dataUnitId": 4,
+              "partitionIndex": 0
+            },
+            "progress": 0.0
+          }
+        }
+      ],
+      "done": false,
+      "freeMemory": [
+        100730404864.0,
+        204816252928.0,
+        1.07374115291136e+15
+      ],
+      "nSteps": 9,
+      "partitions": {
+        "cachingNodes": [
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": [
+              0
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": [
+              0
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": []
+          }
+        ],
+        "nNodes": 3,
+        "owningNode": [
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": 1
+          }
+        ]
+      },
+      "pendingShuffles": [],
+      "pendingTasks": [],
+      "pendingTransfers": [],
+      "runningShuffles": [
+        {
+          "from": 1,
+          "progress": 0.0,
+          "to": 0
+        }
+      ],
+      "runningTasks": [
+        {
+          "progress": 0.2525,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 0,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 3,
+                "partitionIndex": 0
+              },
+              "pipelineId": 1,
+              "requiredPartitions": [
+                {
+                  "dataUnitId": 2,
+                  "partitionIndex": 0
+                }
+              ],
+              "scannedPartition": {
+                "dataUnitId": 1,
+                "partitionIndex": 0
+              }
+            }
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.2525,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 0,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 3,
+                "partitionIndex": 2
+              },
+              "pipelineId": 1,
+              "requiredPartitions": [
+                {
+                  "dataUnitId": 2,
+                  "partitionIndex": 2
+                }
+              ],
+              "scannedPartition": {
+                "dataUnitId": 1,
+                "partitionIndex": 2
+              }
+            }
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runningTransfers": [],
+      "runtime": 0.17525,
+      "shuffleTargets": [
+        {
+          "nodes": [
+            0
+          ],
+          "partition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "abortMessage": "",
+      "aborted": false,
+      "collectedShuffles": [
+        {
+          "locatedPartition": {
+            "Node": 0,
+            "Partition": {
+              "dataUnitId": 4,
+              "partitionIndex": 0
+            }
+          },
+          "shuffleOutPartition": {
+            "node": 0,
+            "partition": {
+              "dataUnitId": 4,
+              "partitionIndex": 0
+            },
+            "progress": 0.5
+          }
+        }
+      ],
+      "done": false,
+      "freeMemory": [
+        100730404864.0,
+        204816252928.0,
+        1.07374115291136e+15
+      ],
+      "nSteps": 10,
+      "partitions": {
+        "cachingNodes": [
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": [
+              0
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": [
+              0
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": []
+          }
+        ],
+        "nNodes": 3,
+        "owningNode": [
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": 1
+          }
+        ]
+      },
+      "pendingShuffles": [],
+      "pendingTasks": [],
+      "pendingTransfers": [],
+      "runningShuffles": [],
+      "runningTasks": [
+        {
+          "progress": 0.7525,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 0,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 3,
+                "partitionIndex": 0
+              },
+              "pipelineId": 1,
+              "requiredPartitions": [
+                {
+                  "dataUnitId": 2,
+                  "partitionIndex": 0
+                }
+              ],
+              "scannedPartition": {
+                "dataUnitId": 1,
+                "partitionIndex": 0
+              }
+            }
+          },
+          "waitingForInput": false
+        },
+        {
+          "progress": 0.7525,
+          "progressLimit": 1.0,
+          "task": {
+            "node": 0,
+            "task": {
+              "broadcast": false,
+              "outputPartition": {
+                "dataUnitId": 3,
+                "partitionIndex": 2
+              },
+              "pipelineId": 1,
+              "requiredPartitions": [
+                {
+                  "dataUnitId": 2,
+                  "partitionIndex": 2
+                }
+              ],
+              "scannedPartition": {
+                "dataUnitId": 1,
+                "partitionIndex": 2
+              }
+            }
+          },
+          "waitingForInput": false
+        }
+      ],
+      "runningTransfers": [],
+      "runtime": 0.22525,
+      "shuffleTargets": [
+        {
+          "nodes": [
+            0
+          ],
+          "partition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "abortMessage": "",
+      "aborted": false,
+      "collectedShuffles": [],
+      "done": false,
+      "freeMemory": [
+        100730404864.0,
+        204816252928.0,
+        1.07374115291136e+15
+      ],
+      "nSteps": 11,
+      "partitions": {
+        "cachingNodes": [
+          {
+            "k": {
+              "dataUnitId": 4,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": [
+              0
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": [
+              0
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": []
+          }
+        ],
+        "nNodes": 3,
+        "owningNode": [
+          {
+            "k": {
+              "dataUnitId": 4,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": 1
+          }
+        ]
+      },
+      "pendingShuffles": [],
+      "pendingTasks": [],
+      "pendingTransfers": [],
+      "runningShuffles": [],
+      "runningTasks": [],
+      "runningTransfers": [],
+      "runtime": 0.25,
+      "shuffleTargets": [
+        {
+          "nodes": [
+            0
+          ],
+          "partition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "abortMessage": "",
+      "aborted": false,
+      "collectedShuffles": [],
+      "done": true,
+      "freeMemory": [
+        100730404864.0,
+        204816252928.0,
+        1.07374115291136e+15
+      ],
+      "nSteps": 12,
+      "partitions": {
+        "cachingNodes": [
+          {
+            "k": {
+              "dataUnitId": 4,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": [
+              0
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": [
+              0
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": [
+              1
+            ]
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": []
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": []
+          }
+        ],
+        "nNodes": 3,
+        "owningNode": [
+          {
+            "k": {
+              "dataUnitId": 4,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 3
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 1
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 0
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 1
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 2
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 3
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 2
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 1,
+              "partitionIndex": 3
+            },
+            "v": 2
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 0,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 3,
+              "partitionIndex": 1
+            },
+            "v": 1
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            },
+            "v": 0
+          },
+          {
+            "k": {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            },
+            "v": 1
+          }
+        ]
+      },
+      "pendingShuffles": [],
+      "pendingTasks": [],
+      "pendingTransfers": [],
+      "runningShuffles": [],
+      "runningTasks": [],
+      "runningTransfers": [],
+      "runtime": 0.25,
+      "shuffleTargets": [
+        {
+          "nodes": [
+            0
+          ],
+          "partition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    }
+  ],
+  "taskAssignment": {
+    "locatedTasks": [
+      {
+        "node": 0,
+        "task": {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 2,
+            "partitionIndex": 0
+          },
+          "pipelineId": 0,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 0,
+            "partitionIndex": 0
+          }
+        }
+      },
+      {
+        "node": 1,
+        "task": {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 2,
+            "partitionIndex": 1
+          },
+          "pipelineId": 0,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 0,
+            "partitionIndex": 1
+          }
+        }
+      },
+      {
+        "node": 0,
+        "task": {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 2,
+            "partitionIndex": 2
+          },
+          "pipelineId": 0,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 0,
+            "partitionIndex": 2
+          }
+        }
+      },
+      {
+        "node": 1,
+        "task": {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 2,
+            "partitionIndex": 3
+          },
+          "pipelineId": 0,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 0,
+            "partitionIndex": 3
+          }
+        }
+      },
+      {
+        "node": 0,
+        "task": {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 3,
+            "partitionIndex": 0
+          },
+          "pipelineId": 1,
+          "requiredPartitions": [
+            {
+              "dataUnitId": 2,
+              "partitionIndex": 0
+            }
+          ],
+          "scannedPartition": {
+            "dataUnitId": 1,
+            "partitionIndex": 0
+          }
+        }
+      },
+      {
+        "node": 1,
+        "task": {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 3,
+            "partitionIndex": 1
+          },
+          "pipelineId": 1,
+          "requiredPartitions": [
+            {
+              "dataUnitId": 2,
+              "partitionIndex": 1
+            }
+          ],
+          "scannedPartition": {
+            "dataUnitId": 1,
+            "partitionIndex": 1
+          }
+        }
+      },
+      {
+        "node": 0,
+        "task": {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 3,
+            "partitionIndex": 2
+          },
+          "pipelineId": 1,
+          "requiredPartitions": [
+            {
+              "dataUnitId": 2,
+              "partitionIndex": 2
+            }
+          ],
+          "scannedPartition": {
+            "dataUnitId": 1,
+            "partitionIndex": 2
+          }
+        }
+      },
+      {
+        "node": 1,
+        "task": {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 3,
+            "partitionIndex": 3
+          },
+          "pipelineId": 1,
+          "requiredPartitions": [
+            {
+              "dataUnitId": 2,
+              "partitionIndex": 3
+            }
+          ],
+          "scannedPartition": {
+            "dataUnitId": 1,
+            "partitionIndex": 3
+          }
+        }
+      }
+    ],
+    "shuffleTargets": [
+      {
+        "location": 0,
+        "partition": {
+          "dataUnitId": 4,
+          "partitionIndex": 0
+        }
+      }
+    ],
+    "transfers": [
+      {
+        "from": 0,
+        "partition": {
+          "dataUnitId": 0,
+          "partitionIndex": 1
+        },
+        "to": 1
+      },
+      {
+        "from": 0,
+        "partition": {
+          "dataUnitId": 0,
+          "partitionIndex": 3
+        },
+        "to": 1
+      },
+      {
+        "from": 2,
+        "partition": {
+          "dataUnitId": 1,
+          "partitionIndex": 0
+        },
+        "to": 0
+      },
+      {
+        "from": 2,
+        "partition": {
+          "dataUnitId": 1,
+          "partitionIndex": 1
+        },
+        "to": 1
+      },
+      {
+        "from": 2,
+        "partition": {
+          "dataUnitId": 1,
+          "partitionIndex": 2
+        },
+        "to": 0
+      },
+      {
+        "from": 2,
+        "partition": {
+          "dataUnitId": 1,
+          "partitionIndex": 3
+        },
+        "to": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "cardinality_errors_common",
+  "partitionCounts": [16],
+  "queryCategories": ["tpch", "job", "tpcds"],
+  "partitioners": ["rrall"],
+  "clusters": [{ "nNodes": 8, "storageService": true, "nodeTypes": ["c5n18xlarge"] }],
+  "planners": ["arr", "greedy1", "heft", "netheft", "ceft"],
+  "nParallelTasks": 10000,
+  "cardinalityErrors": [1.0, 1.58, 2.51, 3.98, 6.31, 10.0, 15.85, 25.12, 39.81, 63.1, 100.0],
+  "scaleFactor": 100
+}

@@ -1,0 +1,9 @@
+{
+  "name": "growing_scale_out",
+  "partitionCounts": [16],
+  "queryCategories": ["growing"],
+  "partitioners": ["rrhalf"],
+  "clusters": [{ "nNodes": 8, "storageService": true, "nodeTypes": ["c5n18xlarge"] }],
+  "planners": ["arr", "rand1k", "greedy1", "heft", "netheft", "ceft"],
+  "nParallelTasks": 10000
+}

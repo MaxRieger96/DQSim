@@ -1,0 +1,11 @@
+{
+  "name": "full_enumeration",
+  "partitionCounts": [4],
+  "queryCategories": ["tpch", "job", "tpcds"],
+  "partitioners": ["rand2"],
+  "clusters": [{ "nNodes": 3, "storageService": true, "nodeTypes": ["c5nxlarge", "c5n9xlarge", "c5n18xlarge"] }],
+  "planners": ["bruteforce", "arr", "greedy1", "heft", "netheft", "ceft", "rand1k"],
+  "taskLimit": 16,
+  "nParallelTasks": 10000,
+  "scaleFactor": 100
+}

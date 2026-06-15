@@ -1,0 +1,7 @@
+{
+  "c5n18xlarge": { "nCores": 72, "memorySize": 192, "networkSpeed": 100, "networkLatency": 2.5e-4 },
+  "c5n9xlarge": { "nCores": 36, "memorySize": 96, "networkSpeed": 50, "networkLatency": 2.5e-4 },
+  "c5nxlarge": { "nCores": 4, "memorySize": 10.5, "networkSpeed": 20, "networkLatency": 2.5e-4 },
+  "c5nxlarge_fast_network": { "nCores": 4, "memorySize": 10.5, "networkSpeed": 100, "networkLatency": 2.5e-4 },
+  "storage": { "nCores": 0, "memorySize": 1000000, "networkSpeed": 1000000, "networkLatency": 0.1 }
+}

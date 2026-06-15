@@ -1,0 +1,2243 @@
+{
+  "cluster": {
+    "nodes": [
+      {
+        "memorySize": 1e+100,
+        "nCores": 4,
+        "networkLatency": 0.0,
+        "networkSpeed": 10.0
+      },
+      {
+        "memorySize": 1e+100,
+        "nCores": 4,
+        "networkLatency": 0.0,
+        "networkSpeed": 10.0
+      },
+      {
+        "memorySize": 1e+100,
+        "nCores": 4,
+        "networkLatency": 0.0,
+        "networkSpeed": 10.0
+      },
+      {
+        "memorySize": 1e+100,
+        "nCores": 0,
+        "networkLatency": 0.0,
+        "networkSpeed": 10000000000.0
+      }
+    ],
+    "storageService": true
+  },
+  "plan": {
+    "dataUnits": [
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 0,
+            "name": "attr_0",
+            "size": 12.072309837187586
+          }
+        ],
+        "estimatedCard": 600037902.0,
+        "id": 0,
+        "isIntermediate": false,
+        "name": "du_0",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 0,
+              "name": "attr_0",
+              "size": 12.072309837187586
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 1,
+            "name": "attr_0",
+            "size": 54.0
+          }
+        ],
+        "estimatedCard": 600037902.0,
+        "id": 1,
+        "isIntermediate": true,
+        "name": "du_1",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 1,
+              "name": "attr_0",
+              "size": 54.0
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 2,
+            "name": "attr_0",
+            "size": 48.673809
+          }
+        ],
+        "estimatedCard": 1000000.0,
+        "id": 2,
+        "isIntermediate": false,
+        "name": "du_2",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 2,
+              "name": "attr_0",
+              "size": 48.673809
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 3,
+            "name": "attr_0",
+            "size": 18.0
+          }
+        ],
+        "estimatedCard": 1000000.0,
+        "id": 3,
+        "isIntermediate": true,
+        "name": "du_3",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 3,
+              "name": "attr_0",
+              "size": 18.0
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 4,
+            "name": "attr_0",
+            "size": 11.3017237
+          }
+        ],
+        "estimatedCard": 20000000.0,
+        "id": 4,
+        "isIntermediate": false,
+        "name": "du_4",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 4,
+              "name": "attr_0",
+              "size": 11.3017237
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 5,
+            "name": "attr_0",
+            "size": 9.0
+          }
+        ],
+        "estimatedCard": 1087982.0,
+        "id": 5,
+        "isIntermediate": true,
+        "name": "du_5",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 5,
+              "name": "attr_0",
+              "size": 9.0
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 6,
+            "name": "attr_0",
+            "size": 9.0
+          }
+        ],
+        "estimatedCard": 1087982.0,
+        "id": 6,
+        "isIntermediate": true,
+        "name": "du_6",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 6,
+              "name": "attr_0",
+              "size": 9.0
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 7,
+            "name": "attr_0",
+            "size": 18.0
+          }
+        ],
+        "estimatedCard": 1000000.0,
+        "id": 7,
+        "isIntermediate": true,
+        "name": "du_7",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 7,
+              "name": "attr_0",
+              "size": 18.0
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 8,
+            "name": "attr_0",
+            "size": 18.0
+          }
+        ],
+        "estimatedCard": 3000000.0,
+        "id": 8,
+        "isIntermediate": true,
+        "name": "du_8",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 8,
+              "name": "attr_0",
+              "size": 18.0
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 9,
+            "name": "attr_0",
+            "size": 18.0
+          }
+        ],
+        "estimatedCard": 3000000.0,
+        "id": 9,
+        "isIntermediate": true,
+        "name": "du_9",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 9,
+              "name": "attr_0",
+              "size": 18.0
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 10,
+            "name": "attr_0",
+            "size": 5.524597725
+          }
+        ],
+        "estimatedCard": 80000000.0,
+        "id": 10,
+        "isIntermediate": false,
+        "name": "du_10",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 10,
+              "name": "attr_0",
+              "size": 5.524597725
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 11,
+            "name": "attr_0",
+            "size": 27.0
+          }
+        ],
+        "estimatedCard": 80000000.0,
+        "id": 11,
+        "isIntermediate": true,
+        "name": "du_11",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 11,
+              "name": "attr_0",
+              "size": 27.0
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 12,
+            "name": "attr_0",
+            "size": 18.0
+          }
+        ],
+        "estimatedCard": 3000000.0,
+        "id": 12,
+        "isIntermediate": true,
+        "name": "du_12",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 12,
+              "name": "attr_0",
+              "size": 18.0
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 13,
+            "name": "attr_0",
+            "size": 54.0
+          }
+        ],
+        "estimatedCard": 600037902.0,
+        "id": 13,
+        "isIntermediate": true,
+        "name": "du_13",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 13,
+              "name": "attr_0",
+              "size": 54.0
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 14,
+            "name": "attr_0",
+            "size": 54.0
+          }
+        ],
+        "estimatedCard": 32636547.0,
+        "id": 14,
+        "isIntermediate": true,
+        "name": "du_14",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 14,
+              "name": "attr_0",
+              "size": 54.0
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 15,
+            "name": "attr_0",
+            "size": 65.88
+          }
+        ],
+        "estimatedCard": 25.0,
+        "id": 15,
+        "isIntermediate": false,
+        "name": "du_15",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 15,
+              "name": "attr_0",
+              "size": 65.88
+            }
+          ],
+          "nPartitions": 1,
+          "type": "singlenode"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 16,
+            "name": "attr_0",
+            "size": 21.08
+          }
+        ],
+        "estimatedCard": 25.0,
+        "id": 16,
+        "isIntermediate": true,
+        "name": "du_16",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 16,
+              "name": "attr_0",
+              "size": 21.08
+            }
+          ],
+          "nPartitions": 1,
+          "type": "singlenode"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 17,
+            "name": "attr_0",
+            "size": 2.05876924
+          }
+        ],
+        "estimatedCard": 150000000.0,
+        "id": 17,
+        "isIntermediate": false,
+        "name": "du_17",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 17,
+              "name": "attr_0",
+              "size": 2.05876924
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 18,
+            "name": "attr_0",
+            "size": 14.0
+          }
+        ],
+        "estimatedCard": 150000000.0,
+        "id": 18,
+        "isIntermediate": true,
+        "name": "du_18",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 18,
+              "name": "attr_0",
+              "size": 14.0
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 19,
+            "name": "attr_0",
+            "size": 14.0
+          }
+        ],
+        "estimatedCard": 150000000.0,
+        "id": 19,
+        "isIntermediate": true,
+        "name": "du_19",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 19,
+              "name": "attr_0",
+              "size": 14.0
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 20,
+            "name": "attr_0",
+            "size": 21.08
+          }
+        ],
+        "estimatedCard": 25.0,
+        "id": 20,
+        "isIntermediate": true,
+        "name": "du_20",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 20,
+              "name": "attr_0",
+              "size": 21.08
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 21,
+            "name": "attr_0",
+            "size": 21.08
+          }
+        ],
+        "estimatedCard": 75.0,
+        "id": 21,
+        "isIntermediate": true,
+        "name": "du_21",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 21,
+              "name": "attr_0",
+              "size": 21.08
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 22,
+            "name": "attr_0",
+            "size": 21.08
+          }
+        ],
+        "estimatedCard": 75.0,
+        "id": 22,
+        "isIntermediate": true,
+        "name": "du_22",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 22,
+              "name": "attr_0",
+              "size": 21.08
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 23,
+            "name": "attr_0",
+            "size": 21.08
+          }
+        ],
+        "estimatedCard": 75.0,
+        "id": 23,
+        "isIntermediate": true,
+        "name": "du_23",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 23,
+              "name": "attr_0",
+              "size": 21.08
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 24,
+            "name": "attr_0",
+            "size": 34.08
+          }
+        ],
+        "estimatedCard": 1400.0,
+        "id": 24,
+        "isIntermediate": true,
+        "name": "du_24",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 24,
+              "name": "attr_0",
+              "size": 34.08
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 25,
+            "name": "attr_0",
+            "size": 34.08
+          }
+        ],
+        "estimatedCard": 1400.0,
+        "id": 25,
+        "isIntermediate": true,
+        "name": "du_25",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 25,
+              "name": "attr_0",
+              "size": 34.08
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 26,
+            "name": "attr_0",
+            "size": 34.08
+          }
+        ],
+        "estimatedCard": 1400.0,
+        "id": 26,
+        "isIntermediate": true,
+        "name": "du_26",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 26,
+              "name": "attr_0",
+              "size": 34.08
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 27,
+            "name": "attr_0",
+            "size": 38.08
+          }
+        ],
+        "estimatedCard": 175.0,
+        "id": 27,
+        "isIntermediate": true,
+        "name": "du_27",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 27,
+              "name": "attr_0",
+              "size": 38.08
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 28,
+            "name": "attr_0",
+            "size": 38.08
+          }
+        ],
+        "estimatedCard": 175.0,
+        "id": 28,
+        "isIntermediate": true,
+        "name": "du_28",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 28,
+              "name": "attr_0",
+              "size": 38.08
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 29,
+            "name": "attr_0",
+            "size": 38.08
+          }
+        ],
+        "estimatedCard": 175.0,
+        "id": 29,
+        "isIntermediate": true,
+        "name": "du_29",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 29,
+              "name": "attr_0",
+              "size": 38.08
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 30,
+            "name": "attr_0",
+            "size": 38.08
+          }
+        ],
+        "estimatedCard": 175.0,
+        "id": 30,
+        "isIntermediate": true,
+        "name": "du_30",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 30,
+              "name": "attr_0",
+              "size": 38.08
+            }
+          ],
+          "nPartitions": 3,
+          "type": "hashpartitioned"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 31,
+            "name": "attr_0",
+            "size": 38.08
+          }
+        ],
+        "estimatedCard": 175.0,
+        "id": 31,
+        "isIntermediate": true,
+        "name": "du_31",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 31,
+              "name": "attr_0",
+              "size": 38.08
+            }
+          ],
+          "nPartitions": 1,
+          "type": "singlenode"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "attributeIndex": 0,
+            "dataUnitId": 32,
+            "name": "attr_0",
+            "size": 38.08
+          }
+        ],
+        "estimatedCard": 175.0,
+        "id": 32,
+        "isIntermediate": true,
+        "name": "du_32",
+        "partitionLayout": {
+          "attributes": [
+            {
+              "attributeIndex": 0,
+              "dataUnitId": 32,
+              "name": "attr_0",
+              "size": 38.08
+            }
+          ],
+          "nPartitions": 1,
+          "type": "singlenode"
+        }
+      }
+    ],
+    "dependencyOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "pipelines": [
+      {
+        "description": "pipeline_0",
+        "estimatedLoad": 1.5660469061502718e-08,
+        "id": 0,
+        "output": 1,
+        "requiredData": [],
+        "scan": 0
+      },
+      {
+        "description": "pipeline_1",
+        "estimatedLoad": 1.491125e-08,
+        "id": 1,
+        "output": 3,
+        "requiredData": [],
+        "scan": 2
+      },
+      {
+        "description": "pipeline_2",
+        "estimatedLoad": 1.2034875e-08,
+        "id": 2,
+        "output": 5,
+        "requiredData": [],
+        "scan": 4
+      },
+      {
+        "description": "pipeline_3",
+        "estimatedLoad": 2.5981013472649365e-08,
+        "id": 3,
+        "output": 6,
+        "requiredData": [],
+        "scan": 5
+      },
+      {
+        "description": "pipeline_4",
+        "estimatedLoad": 1.0105e-08,
+        "id": 4,
+        "output": 8,
+        "requiredData": [],
+        "scan": 7
+      },
+      {
+        "description": "pipeline_5",
+        "estimatedLoad": 6.698750000000001e-09,
+        "id": 5,
+        "output": 9,
+        "requiredData": [],
+        "scan": 8
+      },
+      {
+        "description": "pipeline_6",
+        "estimatedLoad": 7.703125e-09,
+        "id": 6,
+        "output": 11,
+        "requiredData": [],
+        "scan": 10
+      },
+      {
+        "description": "pipeline_7",
+        "estimatedLoad": 1.01640625e-08,
+        "id": 7,
+        "output": 12,
+        "requiredData": [],
+        "scan": 11
+      },
+      {
+        "description": "pipeline_8",
+        "estimatedLoad": 2.2026733571240304e-08,
+        "id": 8,
+        "output": 14,
+        "requiredData": [
+          6,
+          9,
+          12
+        ],
+        "scan": 13
+      },
+      {
+        "description": "pipeline_9",
+        "estimatedLoad": 7.825e-06,
+        "id": 9,
+        "output": 16,
+        "requiredData": [],
+        "scan": 15
+      },
+      {
+        "description": "pipeline_10",
+        "estimatedLoad": 3.3708333333333333e-09,
+        "id": 10,
+        "output": 18,
+        "requiredData": [],
+        "scan": 17
+      },
+      {
+        "description": "pipeline_11",
+        "estimatedLoad": 9.5552125e-09,
+        "id": 11,
+        "output": 19,
+        "requiredData": [],
+        "scan": 18
+      },
+      {
+        "description": "pipeline_12",
+        "estimatedLoad": 6.665575e-06,
+        "id": 12,
+        "output": 21,
+        "requiredData": [],
+        "scan": 20
+      },
+      {
+        "description": "pipeline_13",
+        "estimatedLoad": 3.306525e-06,
+        "id": 13,
+        "output": 22,
+        "requiredData": [],
+        "scan": 21
+      },
+      {
+        "description": "pipeline_14",
+        "estimatedLoad": 0.026243016666666664,
+        "id": 14,
+        "output": 24,
+        "requiredData": [
+          19,
+          22
+        ],
+        "scan": 23
+      },
+      {
+        "description": "pipeline_15",
+        "estimatedLoad": 1.6242232142857143e-07,
+        "id": 15,
+        "output": 26,
+        "requiredData": [],
+        "scan": 25
+      },
+      {
+        "description": "pipeline_16",
+        "estimatedLoad": 6.758928571428572e-07,
+        "id": 16,
+        "output": 27,
+        "requiredData": [],
+        "scan": 26
+      },
+      {
+        "description": "pipeline_17",
+        "estimatedLoad": 2.0711000000000004e-06,
+        "id": 17,
+        "output": 29,
+        "requiredData": [],
+        "scan": 28
+      },
+      {
+        "description": "pipeline_18",
+        "estimatedLoad": 1.048242857142857e-06,
+        "id": 18,
+        "output": 30,
+        "requiredData": [],
+        "scan": 29
+      },
+      {
+        "description": "pipeline_19",
+        "estimatedLoad": 3.8571428571428574e-07,
+        "id": 19,
+        "output": 32,
+        "requiredData": [],
+        "scan": 31
+      }
+    ],
+    "shuffleStages": [
+      {
+        "from": 3,
+        "to": 7
+      },
+      {
+        "from": 1,
+        "to": 13
+      },
+      {
+        "from": 16,
+        "to": 20
+      },
+      {
+        "from": 14,
+        "to": 23
+      },
+      {
+        "from": 24,
+        "to": 25
+      },
+      {
+        "from": 27,
+        "to": 28
+      },
+      {
+        "from": 30,
+        "to": 31
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "k": 19,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 32,
+            "partitionIndex": 0
+          },
+          "pipelineId": 19,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 31,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "k": 18,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 30,
+            "partitionIndex": 0
+          },
+          "pipelineId": 18,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 29,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 30,
+            "partitionIndex": 1
+          },
+          "pipelineId": 18,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 29,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 30,
+            "partitionIndex": 2
+          },
+          "pipelineId": 18,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 29,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 17,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 29,
+            "partitionIndex": 0
+          },
+          "pipelineId": 17,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 28,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 29,
+            "partitionIndex": 1
+          },
+          "pipelineId": 17,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 28,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 29,
+            "partitionIndex": 2
+          },
+          "pipelineId": 17,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 28,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 16,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 27,
+            "partitionIndex": 0
+          },
+          "pipelineId": 16,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 26,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 27,
+            "partitionIndex": 1
+          },
+          "pipelineId": 16,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 26,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 27,
+            "partitionIndex": 2
+          },
+          "pipelineId": 16,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 26,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 15,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 26,
+            "partitionIndex": 0
+          },
+          "pipelineId": 15,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 25,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 26,
+            "partitionIndex": 1
+          },
+          "pipelineId": 15,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 25,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 26,
+            "partitionIndex": 2
+          },
+          "pipelineId": 15,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 25,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 14,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 24,
+            "partitionIndex": 0
+          },
+          "pipelineId": 14,
+          "requiredPartitions": [
+            {
+              "dataUnitId": 19,
+              "partitionIndex": 0
+            },
+            {
+              "dataUnitId": 22,
+              "partitionIndex": 0
+            }
+          ],
+          "scannedPartition": {
+            "dataUnitId": 23,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 24,
+            "partitionIndex": 1
+          },
+          "pipelineId": 14,
+          "requiredPartitions": [
+            {
+              "dataUnitId": 19,
+              "partitionIndex": 1
+            },
+            {
+              "dataUnitId": 22,
+              "partitionIndex": 1
+            }
+          ],
+          "scannedPartition": {
+            "dataUnitId": 23,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 24,
+            "partitionIndex": 2
+          },
+          "pipelineId": 14,
+          "requiredPartitions": [
+            {
+              "dataUnitId": 19,
+              "partitionIndex": 2
+            },
+            {
+              "dataUnitId": 22,
+              "partitionIndex": 2
+            }
+          ],
+          "scannedPartition": {
+            "dataUnitId": 23,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 13,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 22,
+            "partitionIndex": 0
+          },
+          "pipelineId": 13,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 21,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 22,
+            "partitionIndex": 1
+          },
+          "pipelineId": 13,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 21,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 22,
+            "partitionIndex": 2
+          },
+          "pipelineId": 13,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 21,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 0,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 1,
+            "partitionIndex": 0
+          },
+          "pipelineId": 0,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 0,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 1,
+            "partitionIndex": 1
+          },
+          "pipelineId": 0,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 0,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 1,
+            "partitionIndex": 2
+          },
+          "pipelineId": 0,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 0,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 1,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 3,
+            "partitionIndex": 0
+          },
+          "pipelineId": 1,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 2,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 3,
+            "partitionIndex": 1
+          },
+          "pipelineId": 1,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 2,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 3,
+            "partitionIndex": 2
+          },
+          "pipelineId": 1,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 2,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 5,
+            "partitionIndex": 0
+          },
+          "pipelineId": 2,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 4,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 5,
+            "partitionIndex": 1
+          },
+          "pipelineId": 2,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 4,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 5,
+            "partitionIndex": 2
+          },
+          "pipelineId": 2,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 4,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 3,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 6,
+            "partitionIndex": 0
+          },
+          "pipelineId": 3,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 5,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 6,
+            "partitionIndex": 1
+          },
+          "pipelineId": 3,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 5,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 6,
+            "partitionIndex": 2
+          },
+          "pipelineId": 3,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 5,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 4,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 8,
+            "partitionIndex": 0
+          },
+          "pipelineId": 4,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 7,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 8,
+            "partitionIndex": 1
+          },
+          "pipelineId": 4,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 7,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 8,
+            "partitionIndex": 2
+          },
+          "pipelineId": 4,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 7,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 5,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 9,
+            "partitionIndex": 0
+          },
+          "pipelineId": 5,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 8,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 9,
+            "partitionIndex": 1
+          },
+          "pipelineId": 5,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 8,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 9,
+            "partitionIndex": 2
+          },
+          "pipelineId": 5,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 8,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 6,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 11,
+            "partitionIndex": 0
+          },
+          "pipelineId": 6,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 10,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 11,
+            "partitionIndex": 1
+          },
+          "pipelineId": 6,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 10,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 11,
+            "partitionIndex": 2
+          },
+          "pipelineId": 6,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 10,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 7,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 12,
+            "partitionIndex": 0
+          },
+          "pipelineId": 7,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 11,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 12,
+            "partitionIndex": 1
+          },
+          "pipelineId": 7,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 11,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 12,
+            "partitionIndex": 2
+          },
+          "pipelineId": 7,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 11,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 8,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 14,
+            "partitionIndex": 0
+          },
+          "pipelineId": 8,
+          "requiredPartitions": [
+            {
+              "dataUnitId": 6,
+              "partitionIndex": 0
+            },
+            {
+              "dataUnitId": 9,
+              "partitionIndex": 0
+            },
+            {
+              "dataUnitId": 12,
+              "partitionIndex": 0
+            }
+          ],
+          "scannedPartition": {
+            "dataUnitId": 13,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 14,
+            "partitionIndex": 1
+          },
+          "pipelineId": 8,
+          "requiredPartitions": [
+            {
+              "dataUnitId": 6,
+              "partitionIndex": 1
+            },
+            {
+              "dataUnitId": 9,
+              "partitionIndex": 1
+            },
+            {
+              "dataUnitId": 12,
+              "partitionIndex": 1
+            }
+          ],
+          "scannedPartition": {
+            "dataUnitId": 13,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 14,
+            "partitionIndex": 2
+          },
+          "pipelineId": 8,
+          "requiredPartitions": [
+            {
+              "dataUnitId": 6,
+              "partitionIndex": 2
+            },
+            {
+              "dataUnitId": 9,
+              "partitionIndex": 2
+            },
+            {
+              "dataUnitId": 12,
+              "partitionIndex": 2
+            }
+          ],
+          "scannedPartition": {
+            "dataUnitId": 13,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 9,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 16,
+            "partitionIndex": 0
+          },
+          "pipelineId": 9,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 15,
+            "partitionIndex": 0
+          }
+        }
+      ]
+    },
+    {
+      "k": 10,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 18,
+            "partitionIndex": 0
+          },
+          "pipelineId": 10,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 17,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 18,
+            "partitionIndex": 1
+          },
+          "pipelineId": 10,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 17,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 18,
+            "partitionIndex": 2
+          },
+          "pipelineId": 10,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 17,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 11,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 19,
+            "partitionIndex": 0
+          },
+          "pipelineId": 11,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 18,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 19,
+            "partitionIndex": 1
+          },
+          "pipelineId": 11,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 18,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 19,
+            "partitionIndex": 2
+          },
+          "pipelineId": 11,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 18,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    },
+    {
+      "k": 12,
+      "v": [
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 21,
+            "partitionIndex": 0
+          },
+          "pipelineId": 12,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 20,
+            "partitionIndex": 0
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 21,
+            "partitionIndex": 1
+          },
+          "pipelineId": 12,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 20,
+            "partitionIndex": 1
+          }
+        },
+        {
+          "broadcast": false,
+          "outputPartition": {
+            "dataUnitId": 21,
+            "partitionIndex": 2
+          },
+          "pipelineId": 12,
+          "requiredPartitions": [],
+          "scannedPartition": {
+            "dataUnitId": 20,
+            "partitionIndex": 2
+          }
+        }
+      ]
+    }
+  ],
+  "broadcastTasks": [],
+  "initialPartitioning": {
+    "cachingNodes": [
+      {
+        "k": {
+          "dataUnitId": 10,
+          "partitionIndex": 0
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 17,
+          "partitionIndex": 2
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 17,
+          "partitionIndex": 1
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 2,
+          "partitionIndex": 1
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 0,
+          "partitionIndex": 0
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 0,
+          "partitionIndex": 1
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 10,
+          "partitionIndex": 2
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 4,
+          "partitionIndex": 2
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 4,
+          "partitionIndex": 1
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 15,
+          "partitionIndex": 0
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 0,
+          "partitionIndex": 2
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 2,
+          "partitionIndex": 2
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 2,
+          "partitionIndex": 0
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 17,
+          "partitionIndex": 0
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 4,
+          "partitionIndex": 0
+        },
+        "v": []
+      },
+      {
+        "k": {
+          "dataUnitId": 10,
+          "partitionIndex": 1
+        },
+        "v": []
+      }
+    ],
+    "nNodes": 4,
+    "owningNode": [
+      {
+        "k": {
+          "dataUnitId": 10,
+          "partitionIndex": 0
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 17,
+          "partitionIndex": 2
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 17,
+          "partitionIndex": 1
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 2,
+          "partitionIndex": 1
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 0,
+          "partitionIndex": 0
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 0,
+          "partitionIndex": 1
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 10,
+          "partitionIndex": 2
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 4,
+          "partitionIndex": 2
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 4,
+          "partitionIndex": 1
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 15,
+          "partitionIndex": 0
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 0,
+          "partitionIndex": 2
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 2,
+          "partitionIndex": 2
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 2,
+          "partitionIndex": 0
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 17,
+          "partitionIndex": 0
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 4,
+          "partitionIndex": 0
+        },
+        "v": 3
+      },
+      {
+        "k": {
+          "dataUnitId": 10,
+          "partitionIndex": 1
+        },
+        "v": 3
+      }
+    ]
+  },
+  "name": "trinobench/results/tpch/tpch_9_3w_4c_10gbit_sf100_r1.json"
+}
