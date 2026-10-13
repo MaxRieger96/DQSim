@@ -1,6 +1,6 @@
 # DQSim: Does the Task Assignment Slow Down Your Distributed Database System?
 
-This repository contains the code to reproduce all results of our paper about DQSim. [[Authors Version](https://db.in.tum.de/~rieger/papers/dqsim.pdf)]
+This repository contains the code to reproduce all results of our paper about DQSim. [[Authors Version](https://db.in.tum.de/~rieger/papers/dqsim.pdf)] [[ACM Version](https://dl.acm.org/doi/pdf/10.1145/3837106)]
 
 ## Dependencies
 
@@ -105,14 +105,20 @@ Run `clang-tidy`:
 If you use the contents of this repository, please cite our paper
 
 ```
-@article{dqsim_preprint,
+@article{10.1145/3837106,
   author = {Rieger, Maximilian and Neumann, Thomas},
   title = {DQSim: Does the Task Assignment Slow Down Your Distributed Database System?},
-  year = {2027},
+  year = {2026},
+  issue_date = {September 2026},
   publisher = {Association for Computing Machinery},
   address = {New York, NY, USA},
-  url = {https://github.com/MaxRieger96/dqsim},
+  volume = {4},
+  number = {4},
+  url = {https://doi.org/10.1145/3837106},
+  doi = {10.1145/3837106},
   journal = {Proc. ACM Manag. Data},
-  keywords = {Distributed Database Systems, Scheduling, Query Optimization}
+  month = sep,
+  articleno = {268},
+  numpages = {27},
 }
 ```
